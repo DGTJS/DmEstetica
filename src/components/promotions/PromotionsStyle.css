@@ -1,0 +1,243 @@
+
+.Promocao{
+  margin: 1rem 0rem;
+  padding: 1rem 2rem;
+}
+.container {
+    --verde: #23efef;
+    --azul: #116994;
+    --platinum: #887777;
+    --white: #ffffff;
+    --Black: #333333;
+    --thumb: #2d2e2f;
+    --ScrollBarColor: linear-gradient(to right,#5734342c,rgba(169, 24, 63, 0.462),rgba(105, 39, 39, 0.294));
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%
+    );
+  }
+  .containerCards{
+    border-bottom: solid 1px rgb(134, 133, 133);
+    padding: 2%;
+
+  }
+  .containerCards h2{
+    text-align: center;
+    color: var(--Black);
+    font-size: 1.4rem;
+  }
+  .PromoContagem {
+    border: solid 1px;
+    background-color: rgb(243, 244, 253);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    height: 30rem;
+    color: rgb(98, 176, 120);
+    font-size: 1.8rem;
+    margin: 4vw 3vw 0vw 3vw
+    ;
+  }
+  .TempoRestante{
+    font-size: 1.7rem;
+    color: rgb(248, 248, 248);
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: red;
+  }
+  .ContadorPromo{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+  }
+  .counterNumber{
+    box-shadow: inset 0px -1px 20px 10px rgb(4 4 4 / 34%);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 3vw;
+    width: 8vw;
+    height: 7vh;
+    background-color: #455856;
+  }
+  .counter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .counterTitle{
+    font-size: 1.5vw;
+  }
+
+  .cards {
+    display: flex;
+    padding: 25px 0px;
+    list-style: none;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 100%;
+    padding: 20px;
+    color: var(--Black);
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.261);
+    border: solid 1px rgb(205, 197, 197);
+    scroll-snap-align: start;
+    transition: all 0.2s;
+  }
+  .card h1{
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .card-link{
+    box-shadow: inset 1px -4px 0px 0px rgba(0, 0, 0, 0.261);
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px 4px;
+  }
+  .agendar{
+    gap: 0.1rem;
+  }
+  .Promo{
+    box-shadow: inset 1px -4px 0px 0px rgba(0, 0, 0, 0.261);
+    border-radius: 15px;
+    width: 100%;
+  }
+  .card:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .card:hover {
+    color: var(--white);
+    background: #05534a;
+  }
+  
+  .card .card-title {
+    font-size: 20px;
+  }
+  
+  .card .card-content {
+    margin: 20px 0;
+    max-width: 100%;
+  }
+  
+  .card .card-link-wrapper {
+    margin-top: auto;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  
+  .card .card-link {
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    text-decoration: none;
+    background: #e06c6c;
+    color: var(--white);
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  
+  .card:hover .card-link {
+    background: green;
+    color: whitesmoke;
+  } 
+  
+  .cards::-webkit-scrollbar {
+    height: 12px;
+  }
+  
+  .cards::-webkit-scrollbar-thumb,
+  .cards::-webkit-scrollbar-track {
+    border-radius: 32px;
+    border: solid 0.1px rgb(192, 189, 189);
+  }
+  
+  .cards::-webkit-scrollbar-thumb {
+    background: #e06c6c;
+
+  }
+  
+  .cards::-webkit-scrollbar-track {
+    background: var(--ScrollBarColor);
+  }
+  
+  @media (min-width: 500px) {
+    .card {
+      flex-basis: calc(60% - 10px);
+    }
+  
+    .card:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  
+  @media (min-width: 700px) {
+    .card {
+      flex-basis: calc(calc(100% / 3) - 20px);
+    }
+  
+    .card:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    .card {
+      flex-basis: calc(25% - 30px);
+    }
+  
+    .card:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  @media screen and (max-width: 752px) {
+    .cards::-webkit-scrollbar-thumb,
+    .cards::-webkit-scrollbar-track {
+      display: none;
+    }
+    .container{
+      grid-template-columns: repeat(1, 100%);
+    }
+    .counter{
+      font-size: 0.7rem;
+    }
+    .PromoContagem {
+      height: 55vh;
+      font-size: 1.4rem;
+      padding: 3rem 1rem;
+    }
+    .TempoRestante{
+      font-size: 1.4rem;
+    }
+    .counterTitle{
+      font-size: 1rem;
+    }
+  }
+  
+  
+  @media screen and (max-width: 500px) {
+    .card{
+    flex: 0 0 75%;
+  }
+
+  .counter{
+    font-size: calc(70% -10);
+  }
+  .counterNumber{
+    font-size: 9vw;
+    width: 15vw;
+    height: 15vw;
+  }
+}
