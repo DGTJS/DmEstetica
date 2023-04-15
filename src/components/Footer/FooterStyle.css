@@ -1,0 +1,81 @@
+footer{
+    background-color: #318f6d;
+    color: white;
+    box-shadow: 10px 8px 13px 14px rgba(9, 136, 100, 0.48);
+    border-radius: 25px 25px 0px 0px;
+}
+.my-5{
+    margin-bottom: 0 !important;
+}
+.LogoFooter{
+    width: 15rem;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: rgb(184, 184, 184);
+}
+
+.atendiWhats{
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(8, 159, 109);
+    border-radius: 25px;
+    margin: 0px 20px;
+    padding: 20px 4px !important;
+    text-align: center;
+    justify-content: center;
+}
+.atendiWhats:hover{
+    color: white;
+}
+.AtendiEmail:hover{
+    color: white;
+}
+.AtendiEmail{
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(225, 30, 30);
+    border-radius: 25px;
+    margin: 0px 20px;
+    padding: 20px 4px !important;
+    text-align: center;
+    justify-content: center;
+
+}
+.RedeSociais{
+    gap: 1rem;
+}
+.IconRedeSociais{
+    color: white;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(3, 76, 61);
+}
+.wpp:hover{
+    color: rgb(0, 255, 0);
+}
+.insta{
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+    transform: 0.5s;
+}
+.insta:hover{
+    transform: 0.5s;
+    transition: 05s;
+    color: white;
+    background: radial-gradient(
+        circle at 33% 100%,
+        #fed373 1%,
+        #f15245 30%,
+        #d92e7f 62%,
+        #9b36b7 85%,
+        #515ecf
+    );
+    
+}

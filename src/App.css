@@ -1,2 +1,7 @@
+.row{
+    --bs-gutter-x: 0rem !important;
 
-
+}
+p{
+    margin: 0;
+}

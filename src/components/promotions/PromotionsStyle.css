@@ -1,243 +1,145 @@
-
-.Promocao{
-  margin: 1rem 0rem;
-  padding: 1rem 2rem;
+.Promotions{
+  box-shadow: 0px 12px 10px 14px rgba(4, 101, 72, 0.117);
+  padding: 2rem;
+  border-radius: 15px;
+  margin: 4rem;
 }
-.container {
-    --verde: #23efef;
-    --azul: #116994;
-    --platinum: #887777;
-    --white: #ffffff;
-    --Black: #333333;
-    --thumb: #2d2e2f;
-    --ScrollBarColor: linear-gradient(to right,#5734342c,rgba(169, 24, 63, 0.462),rgba(105, 39, 39, 0.294));
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 50%
-    );
-  }
-  .containerCards{
-    border-bottom: solid 1px rgb(134, 133, 133);
-    padding: 2%;
+.ContainerCards{
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
 
-  }
-  .containerCards h2{
+.ConentCards{
+  display: flex;
+  flex-direction: row;
+}
+.ContainerCategory{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.contentText{
+  border-radius: 15px;
+  box-shadow: 2px 9px 10px 1px#0e7a764c;
+  background-color: #3ab487;
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.TextTratamento{
     text-align: center;
-    color: var(--Black);
-    font-size: 1.4rem;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0.7rem 0rem;
+  text-align: center;
+}
+.contentText h1{
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.contentText p{
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.ConentCategory{
+  box-shadow: 4px 9px 10px 1px rgba(7, 129, 80, 0.247);
+  cursor: pointer;
+  background-color: #3fc091;
+  align-items: center;
+  color: rgb(247, 247, 247);
+  padding: 5% 1%;
+  margin: 5%;
+  border-radius: 0.71vw;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between
+}
+.ConentCategory:hover{
+  z-index: 2;
+  transition: all 0.3s;
+  transform: scale(1.03);
+}
+.ImgCategory{
+  width: 80px;
+}
+.TextCategory{
+
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.w-100{
+  max-width: 50vw;
+  border-radius: 2vw;
+}
+.TelaAgendamento{
+  z-index: 99993;
+  animation: 1s ease-in;
+  position: fixed;
+  top: 2%;
+  right: -120vw;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 90vw;
+  height: 100vh;
+  border-radius: 10px;
+  background-color: #ededed;
+  transition: 1s all ease-in-out;
+}
+.ButtonFechar{
+  position: absolute;
+  right: 0;
+  border-radius: 10px;
+  background-image: url(../../Img/icons8-close\ \(1\).svg);
+  background-size: cover;
+  width: 10px;
+  height: 10px;
+  background-position: center;
+  border: none;
+  margin: 3%;
+  padding: 1.4%;
+}
+
+.TituloServiço{
+  color: #ffffff;
+  border: solid 1px;
+  box-shadow: 0px 6px 10px 4px rgba(22, 138, 103, 0.117);
+  background: linear-gradient(90deg, rgb(46, 191, 111) 16%, rgba(79,223,166,1) 49%, rgb(49, 240, 167) 84%, rgba(22, 243, 247, 0.419) 100%);  padding: 2%;
+  font-size: 2rem;
+  font-weight: 600;
+  border-radius: 10px 10px 0px 0px;
+}
+.Icons-Text{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.CalendarioCategory{
+  font-size: 4rem;
+  padding-right: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-button-next{
+    right: 1vw !important;
   }
-  .PromoContagem {
-    border: solid 1px;
-    background-color: rgb(243, 244, 253);
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
-    height: 30rem;
-    color: rgb(98, 176, 120);
-    font-size: 1.8rem;
-    margin: 4vw 3vw 0vw 3vw
-    ;
+  .swiper-button-prev{
+    left: 1vw !important;
   }
-  .TempoRestante{
+}
+@media screen and (max-width: 390px) {
+  .contentText{
+    padding: 0.7rem 1rem;
+  }
+  .contentText h1{
     font-size: 1.7rem;
-    color: rgb(248, 248, 248);
-    font-weight: 700;
-    border-radius: 5px;
-    background-color: red;
+    font-weight: bold;
   }
-  .ContadorPromo{
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-  }
-  .counterNumber{
-    box-shadow: inset 0px -1px 20px 10px rgb(4 4 4 / 34%);
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    color: whitesmoke;
-    font-size: 3vw;
-    width: 8vw;
-    height: 7vh;
-    background-color: #455856;
-  }
-  .counter{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .counterTitle{
-    font-size: 1.5vw;
-  }
-
-  .cards {
-    display: flex;
-    padding: 25px 0px;
-    list-style: none;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  }
-  
-  .card {
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 100%;
-    padding: 20px;
-    color: var(--Black);
-    background: var(--white);
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.261);
-    border: solid 1px rgb(205, 197, 197);
-    scroll-snap-align: start;
-    transition: all 0.2s;
-  }
-  .card h1{
-    text-align: center;
-    font-size: 1.3rem;
-  }
-  .card-link{
-    box-shadow: inset 1px -4px 0px 0px rgba(0, 0, 0, 0.261);
-    white-space: nowrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0px 4px;
-  }
-  .agendar{
-    gap: 0.1rem;
-  }
-  .Promo{
-    box-shadow: inset 1px -4px 0px 0px rgba(0, 0, 0, 0.261);
-    border-radius: 15px;
-    width: 100%;
-  }
-  .card:not(:last-child) {
-    margin-right: 10px;
-  }
-  
-  .card:hover {
-    color: var(--white);
-    background: #05534a;
-  }
-  
-  .card .card-title {
-    font-size: 20px;
-  }
-  
-  .card .card-content {
-    margin: 20px 0;
-    max-width: 100%;
-  }
-  
-  .card .card-link-wrapper {
-    margin-top: auto;
-    display: inline-flex;
-    justify-content: space-between;
-  }
-  
-  .card .card-link {
-    justify-content: center;
-    align-items: center;
-    display: inline-flex;
-    text-decoration: none;
-    background: #e06c6c;
-    color: var(--white);
-    padding: 10px;
-    border-radius: 8px;
-    transition: background 0.2s;
-  }
-  
-  .card:hover .card-link {
-    background: green;
-    color: whitesmoke;
-  } 
-  
-  .cards::-webkit-scrollbar {
-    height: 12px;
-  }
-  
-  .cards::-webkit-scrollbar-thumb,
-  .cards::-webkit-scrollbar-track {
-    border-radius: 32px;
-    border: solid 0.1px rgb(192, 189, 189);
-  }
-  
-  .cards::-webkit-scrollbar-thumb {
-    background: #e06c6c;
-
-  }
-  
-  .cards::-webkit-scrollbar-track {
-    background: var(--ScrollBarColor);
-  }
-  
-  @media (min-width: 500px) {
-    .card {
-      flex-basis: calc(60% - 10px);
-    }
-  
-    .card:not(:last-child) {
-      margin-right: 20px;
-    }
-  }
-  
-  @media (min-width: 700px) {
-    .card {
-      flex-basis: calc(calc(100% / 3) - 20px);
-    }
-  
-    .card:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-  
-  @media (min-width: 1100px) {
-    .card {
-      flex-basis: calc(25% - 30px);
-    }
-  
-    .card:not(:last-child) {
-      margin-right: 40px;
-    }
-  }
-  @media screen and (max-width: 752px) {
-    .cards::-webkit-scrollbar-thumb,
-    .cards::-webkit-scrollbar-track {
-      display: none;
-    }
-    .container{
-      grid-template-columns: repeat(1, 100%);
-    }
-    .counter{
-      font-size: 0.7rem;
-    }
-    .PromoContagem {
-      height: 55vh;
-      font-size: 1.4rem;
-      padding: 3rem 1rem;
-    }
-    .TempoRestante{
-      font-size: 1.4rem;
-    }
-    .counterTitle{
-      font-size: 1rem;
-    }
-  }
-  
-  
-  @media screen and (max-width: 500px) {
-    .card{
-    flex: 0 0 75%;
-  }
-
-  .counter{
-    font-size: calc(70% -10);
-  }
-  .counterNumber{
-    font-size: 9vw;
-    width: 15vw;
-    height: 15vw;
+  .contentText p{
+    font-size: 0.8rem;
   }
 }
+

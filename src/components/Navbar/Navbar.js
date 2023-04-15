@@ -20,10 +20,8 @@ class Navbar extends Component{
                 <ul className={this.state.clicked ? 'Nav-menu active' : 'Nav-menu '}>
                     {menuData.map((item,index)=>{
                         return(
-                            <li key={index} className='ListNavBar'> 
-                            <a href={item.url} className={item.cName}>
-                            {item.icon}
-                              </a> <p className='TitleIconNav'>{item.title}</p> 
+                            <li key={index} onClick={function(){window.location = item.url}} className='ListNavBar'> 
+                             <p className='TitleIconNav'>{item.title}</p> 
                         </li>
                         )
                     })}

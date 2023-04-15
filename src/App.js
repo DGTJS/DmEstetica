@@ -1,8 +1,8 @@
 import './App.css';
-import IndividualIntervalsExample from './components/Carousel/IndividualIntervalsExample.jsx';
 import Navbar from './components/Navbar/Navbar'
 import PresentationDani from './components/PresentationDani/PresentationDani';
 import Promotions from './components/promotions/Promotion';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
       <PresentationDani/>
       <Navbar/>
       <Promotions/>
+      <Footer/>
    </div>
   );
 }

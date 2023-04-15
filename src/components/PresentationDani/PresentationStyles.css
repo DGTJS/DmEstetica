@@ -26,13 +26,13 @@
 .DescriptionPresentation{
     font-size: 1.2vw;
     background-color: whitesmoke;
-    padding: 20px;
+    padding: 0.67rem;
     border-radius: 13px;
 }
 @media screen and (max-width: 1200px) {
     .HeaderPresentation{
-        padding-top: 12vh;
-    }
+        padding-top: 15vh;
+        padding-bottom: 4vh;    }
 }
 @media screen and (max-width: 768px) {
     .FotoDani{
@@ -43,6 +43,5 @@
     }
     .DescriptionPresentation{
         font-size: 2vw;
-        padding: 8px;
     }
 }
