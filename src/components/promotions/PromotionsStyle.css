@@ -1,8 +1,8 @@
 .Promotions{
   box-shadow: 0px 12px 10px 14px rgba(4, 101, 72, 0.117);
   padding: 2rem;
-  border-radius: 15px;
-  margin: 4rem;
+  border-radius: 10px;
+  margin: 2rem 4rem;
 }
 .ContainerCards{
   display: grid;
@@ -21,7 +21,7 @@
 .contentText{
   border-radius: 15px;
   box-shadow: 2px 9px 10px 1px#0e7a764c;
-  background-color: #3ab487;
+  background-color: #073419;
   font-family: 'Poppins', sans-serif;
   padding: 1rem;
   margin-bottom: 1rem;
@@ -48,15 +48,15 @@
 .ConentCategory{
   box-shadow: 4px 9px 10px 1px rgba(7, 129, 80, 0.247);
   cursor: pointer;
-  background-color: #3fc091;
+  background-color: #073419;
   align-items: center;
   color: rgb(247, 247, 247);
   padding: 5% 1%;
   margin: 5%;
-  border-radius: 0.71vw;
+  border-radius: 0.31vw;
   display: flex;
   flex-direction: row;
-  justify-content:space-between
+  justify-content: space-evenly;
 }
 .ConentCategory:hover{
   z-index: 2;
@@ -72,8 +72,16 @@
   font-weight: 700;
 }
 .w-100{
-  max-width: 50vw;
+  height: 40vw;
+  background-color:transparent;
+}
+.CarouselPromo{
   border-radius: 2vw;
+  object-fit: contain;
+}
+.align-items-center{
+  display: flex;
+  justify-content: center;
 }
 .TelaAgendamento{
   z-index: 99993;
@@ -81,25 +89,25 @@
   position: fixed;
   top: 2%;
   right: -120vw;
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 90vw;
+  margin-right: 1%;
+  width: 98vw;
   height: 100vh;
   border-radius: 10px;
   background-color: #ededed;
   transition: 1s all ease-in-out;
 }
 .ButtonFechar{
+  cursor: pointer;
   position: absolute;
   right: 0;
   border-radius: 10px;
   background-image: url(../../Img/icons8-close\ \(1\).svg);
   background-size: cover;
-  width: 10px;
-  height: 10px;
+  width: 3vmax;
+  height: 3vmax;
   background-position: center;
   border: none;
-  margin: 3%;
+  margin: 2%;
   padding: 1.4%;
 }
 
@@ -107,7 +115,7 @@
   color: #ffffff;
   border: solid 1px;
   box-shadow: 0px 6px 10px 4px rgba(22, 138, 103, 0.117);
-  background: linear-gradient(90deg, rgb(46, 191, 111) 16%, rgba(79,223,166,1) 49%, rgb(49, 240, 167) 84%, rgba(22, 243, 247, 0.419) 100%);  padding: 2%;
+  background: linear-gradient(90deg, #073419 16%, #073419 49%, rgb(17, 112, 79) 84%, rgb(10, 127, 92) 100%);  padding: 2%;
   font-size: 2rem;
   font-weight: 600;
   border-radius: 10px 10px 0px 0px;
@@ -122,24 +130,98 @@
   padding-right: 1.5rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1028px) {
   .swiper-button-next{
     right: 1vw !important;
+  }
+  .TextCategory{
+    font-size: 1rem;
+  }
+  .CalendarioCategory{
+    font-size: 3rem;
+  }
+  .Promotions{
+    margin: 0.6rem;
+    padding: 0.7rem;
   }
   .swiper-button-prev{
     left: 1vw !important;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 625px) {
   .contentText{
     padding: 0.7rem 1rem;
   }
+  .ConentCategory{
+    border-radius: 0.3rem;
+  }
+
+  .Promotions{
+    margin: 0.4rem;
+    padding: 0.5rem;
+  }
+  .TituloServiço{
+    font-size: 1rem;
+  }
+  .TextCategory{
+    text-align: start;
+    padding: 0;
+    font-size: 0.8rem;
+  }
+  .ImgCategory{
+    width: 1.4rem;
+  }
   .contentText h1{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     font-weight: bold;
   }
   .contentText p{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+  .CalendarioCategory{
+    font-size: 1.4rem;
+    padding-right: 0.4rem;
+  }
+  .TelaAgendamento{
+    margin-left: 0%;
+    width: 100vw;
+    margin-right: 0%;
+  }
+  .ButtonFechar{
+    cursor: pointer;
+    position: absolute;
+    top: 1%;
+    right: 0;
+    border-radius: 10px;
+    background-image: url(../../Img/icons8-close\ \(1\).svg);
+    padding: 3%;
   }
 }
-
+.Banner{
+  box-shadow: 0px 11px 16px 11px rgba(99, 94, 94, 0.34);
+  width: 100%;
+  height: 40vw;
+  border: 1rem solid ;
+  border-radius: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .Banner{
+    width: 100%;
+    height: 55vw;
+    background-position: center;
+    background-size: cover;
+    border: 1rem solid ;
+    border-radius: 1rem;
+    background-repeat: no-repeat;
+  }
+  .container{
+    max-width: max-content;
+  }
+}
+@media screen and (max-width: 455px) {
+  .TextCategory{
+    text-align: center;
+    padding: 0;
+    font-size: 0.5rem;
+  }
+}

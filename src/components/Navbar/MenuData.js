@@ -4,24 +4,10 @@ export const menuData = [
         url:'https://wa.me/5511930612987',
         cName:'Nav-links',
     },
-
     {
-        title: 'Serviços',
-        url:'',
+        title: 'Localização',
+        url:'https://www.google.com.br/maps/place/Cl%C3%ADnica+est%C3%A9tica+Daniele+Martins/@-23.4573314,-46.4134137,20z/data=!4m14!1m7!3m6!1s0x94ce63bffaa81371:0x22932bd2af08cf6b!2sCl%C3%ADnica+est%C3%A9tica+Daniele+Martins!8m2!3d-23.4573776!4d-46.413236!16s%2Fg%2F11stnj5lhg!3m5!1s0x94ce63bffaa81371:0x22932bd2af08cf6b!8m2!3d-23.4573776!4d-46.413236!16s%2Fg%2F11stnj5lhg',
         cName:'Nav-links',
-        onclick: Servico()
     },
-    
-    {
-        title: 'Clínica',
-        url:'https://www.google.com/maps/place/R.+Mangaratiba,+18+-+Parque+Sao+Miguel,+Guarulhos+-+SP,+07260-230/@-23.4573778,-46.4133079,3a,75y,99.08h,92.41t/data=!3m6!1e1!3m4!1s7IVvJplQnr1925n0yI_pQQ!2e0!7i16384!8i8192!4m7!3m6!1s0x94ce62447923628d:0xb4063399199db1b8!8m2!3d-23.4573776!4d-46.413236!10e5!16s%2Fg%2F11qg1f3sf8',
-        cName:'Nav-links',
-    }
 ]
 
-function Servico(){
-    return(
-        <>
-        </>
-    )
-}

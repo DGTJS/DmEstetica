@@ -1,0 +1,58 @@
+.Cards{
+    padding-top: 3%;
+    padding-bottom: 2%;    
+    padding-left: 2%;
+    display: flex;
+    overflow-x: auto;
+}
+.card{
+    box-shadow: 0px 8px 16px 4px rgba(22, 138, 103, 0.117);
+    margin: 1%;
+    min-width: 286px;
+    width: 28rem;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 1rem;
+}
+.card-img-top{
+    min-width: 286px;
+    height: 180px;
+    line-height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    padding: 2%;
+}
+.card-title{
+    font-size: 1rem;
+}
+.card-text{
+    font-size: 0.7rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+}
+.btn{
+    background-color: #073419;
+    position: absolute;
+    bottom: 8px;
+    border-radius: 0px;
+    width: 89%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.btn svg{
+    text-align: center;
+    width: 25px;
+}
+.Cards::-webkit-scrollbar{
+    margin: 5%;
+    padding: 5%;
+    height: 0.5vw;
+    border-radius: 0.4vw;
+    background-color: #ffffff98;
+}
+.Cards::-webkit-scrollbar-thumb{
+    border-radius: 150px;
+    background-color:#073419;
+}

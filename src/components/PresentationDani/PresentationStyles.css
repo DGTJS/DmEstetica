@@ -1,13 +1,15 @@
 .HeaderPresentation{
-    background-color: #318f6d;
+    background-color: #073419;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 2rem;
     align-items: center;
     padding: 3%;
     padding-top: 3vw;
     border-end-end-radius: 35px;
     border-end-start-radius: 35px;
+    margin-bottom: 1rem;
 }
 .ImgPresentation{
     margin-top: 2vw;
@@ -21,23 +23,26 @@
 .TitlePresentation{
     white-space: nowrap;
     font-size: 3vw;
-    color: white;
+    color: #ffffff;
 }
 .DescriptionPresentation{
     font-size: 1.2vw;
-    background-color: whitesmoke;
+    background-color: #ffffff;
+    color: #073419;
     padding: 0.67rem;
     border-radius: 13px;
 }
 @media screen and (max-width: 1200px) {
     .HeaderPresentation{
         padding-top: 15vh;
-        padding-bottom: 4vh;    }
+        padding-bottom: 4vh;    
+    }
 }
 @media screen and (max-width: 768px) {
     .FotoDani{
-        width: 48vw;
+        width: 100%;
     }
+
     .TitlePresentation {
         font-size: 4.5vw;
     }

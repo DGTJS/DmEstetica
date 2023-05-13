@@ -1,10 +1,9 @@
 import './PromotionsStyle.css'
-import { CategoryData } from './Cards';
+import { CategoryData } from '../TelaAgendamento/TelaAgendamento';
 import React from 'react';
 import {BsCalendar2Week} from 'react-icons/bs'
-
-
-
+import DarkVariantExample from '../Carrousel/Carousel'
+import Banner from '../../Img/Banner.gif'
 
 
 function Promotions(){
@@ -13,10 +12,12 @@ function Promotions(){
 
     return(
         <>
-
+        <div className='container'>
+        <img className='Banner' src={Banner} alt="" />
+        </div>
         <div className='Promotions'>
             <div className='contentText'>
-                <h1 className='TextTratamento'>Tratamentos Mais Populares</h1>
+                <h1 className='TextTratamento'>Faça seu agendamento <BsCalendar2Week className='CalendarioCategory'/></h1>
                 <p className='TextTratamento'>Realce sua beleza com nossos procedimentos estéticos!</p>
             </div>
             <div className='ContainerCards'>
@@ -33,10 +34,16 @@ function Promotions(){
                     </div>)
                     })}
                 </div>
+                <div className='align-items-center'>
+                    <DarkVariantExample/>
+                </div>
             </div>
                 
         </div>    
         <div className='TelaAgendamento' id='TelaAgendamento'>
+        </div>
+        <div className='Agendar' id='Agendar'>
+
         </div>
         </>
     )
